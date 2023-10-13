@@ -15,6 +15,7 @@ a {
     text-decoration: none;
 }
 
+
 img {
     display: block;
     max-width: 100%;
@@ -63,6 +64,7 @@ h1, h2, h3, h4, h5, h6, p{
 .header-list{
    display: flex; 
    gap: 40px; 
+   transition: #404BBF 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo {
@@ -82,18 +84,19 @@ h1, h2, h3, h4, h5, h6, p{
 
 .link {
     padding: 24px 0 24px;
+
 }
 
 .link:hover,
 .link:focus {
     color: #404BBF;
-    transition: background-color #404BBF 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .activ-page-link {
     position: relative;
-    color: #2E2F42;
-    transition: #404BBF 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+    
 }
 
 .activ-page-link::after {
@@ -150,8 +153,9 @@ h1, h2, h3, h4, h5, h6, p{
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ),
-        url(/images/people-office\ 1.jpg);
+        url(../images/people-office.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     max-width: 1440px;
 }
@@ -333,12 +337,13 @@ h1, h2, h3, h4, h5, h6, p{
 
 .portfolio-section-item {
     width: calc((100% - 24px*2) /3);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section-item:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     cursor: pointer;
+    transform: translateY(0%);
     
 }
 .portfolio-section-card-content {
@@ -418,6 +423,9 @@ h1, h2, h3, h4, h5, h6, p{
     gap: 16px;
 }
 
+.footer-social-list-item {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-social-list-link {
     background-color: #4D5AE5;
     width: 40px;
@@ -438,4 +446,5 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 12px;
     fill: #f4f4fd;
 }
+
 
